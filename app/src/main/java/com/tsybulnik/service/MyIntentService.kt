@@ -31,10 +31,7 @@ class MyIntentService : IntentService(NAME) {
     override fun onDestroy() {
         super.onDestroy()
         log("onDestroy")
-
     }
-
-
     private fun createNotificationChannel(){
         val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
