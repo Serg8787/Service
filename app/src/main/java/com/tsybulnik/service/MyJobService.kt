@@ -43,7 +43,10 @@ class MyJobService : JobService() {
     }
 
     private fun log(message:String){
-        Log.d("Service","MyService ${message}")
+        Log.d("Service_TAG","MyJobService ${message}")
+    }
+    companion object{
+       const val JOBINFO_ID = 1
     }
 
 }
